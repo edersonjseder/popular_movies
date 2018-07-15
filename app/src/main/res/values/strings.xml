@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Pop Movies</string>
+    <string name="app_detail_name">Movie Detail</string>
+
+    <string name="error_message">
+        An error has occurred. Please try again by clicking REFRESH
+    </string>
+
+    <!-- Movie Detail Label -->
+    <string name="label_movie_detail_title">Title: </string>
+    <string name="label_movie_detail_release_date">Release Date: </string>
+    <string name="label_movie_detail_overview">Synopsis: </string>
+    <string name="label_movie_detail_vote_average">User Rating: </string>
+
+    <string name="label_movie_menu_settings"></string>
+    <string name="label_movie_menu_most_popular">Most Popular</string>
+    <string name="label_movie_menu_top_rated">Top Rated</string>
+
+</resources>
