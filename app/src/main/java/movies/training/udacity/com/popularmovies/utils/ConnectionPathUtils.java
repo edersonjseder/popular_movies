@@ -12,6 +12,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Scanner;
 
+import movies.training.udacity.com.popularmovies.BuildConfig;
+
 /**
  * Created by root on 08/10/16.
  */
@@ -20,9 +22,10 @@ public class ConnectionPathUtils {
 
     private static final String TAG = ConnectionPathUtils.class.getSimpleName();
 
+    private static final String KEY = BuildConfig.API_KEY;
+
     static final String URL_TOP_RATED = "https://api.themoviedb.org/3/movie/";
     static final String URL_PATH = "https://api.themoviedb.org/3/discover/movie";
-    static final String KEY = "";
 
     static final String IMG_URL  = "http://image.tmdb.org/t/p/w500/";
     static final String SORT_BY  = "sort_by";
