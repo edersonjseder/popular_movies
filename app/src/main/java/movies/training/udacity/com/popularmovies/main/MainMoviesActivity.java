@@ -55,6 +55,8 @@ public class MainMoviesActivity extends AppCompatActivity implements OnPostTaskL
         // Detects if there is connection available
         detector = new ConnectionDetector(getApplicationContext());
 
+        Log.i(TAG, "onCreate() detector: " + detector.isConnectingToInternet());
+
         // Check for internet connection
         if (!detector.isConnectingToInternet()) {
             // Internet Connection is not present
@@ -95,7 +97,7 @@ public class MainMoviesActivity extends AppCompatActivity implements OnPostTaskL
     }
 
     private void loadTopRatedMovieData(int topRated) {
-        String vote = "vote_average.desc";
+        String vote = "top_rated";
         new FetchMoviesTask(this, mLoadingIndicator, topRated).execute(vote);
     }
 
@@ -144,17 +146,26 @@ public class MainMoviesActivity extends AppCompatActivity implements OnPostTaskL
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        Log.i(TAG, "onCreateOptionsMenu() inside method - detector: " + detector.isConnectingToInternet());
 
-        MenuInflater inflater = getMenuInflater();
+        if (detector.isConnectingToInternet()) {
 
-        inflater.inflate(R.menu.movies_menu, menu);
+            MenuInflater inflater = getMenuInflater();
 
-        return true;
+            inflater.inflate(R.menu.movies_menu, menu);
+
+            return true;
+
+        }
+
+        return false;
 
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Log.i(TAG, "onOptionsItemSelected() inside method - detector: " + detector.isConnectingToInternet());
+
         int id = item.getItemId();
 
         if (id == R.id.action_most_popular) {

@@ -20,7 +20,7 @@ public class ConnectionPathUtils {
 
     private static final String TAG = ConnectionPathUtils.class.getSimpleName();
 
-    //static final String URL_PATH = "https://api.themoviedb.org/3/movie/popular";
+    static final String URL_TOP_RATED = "https://api.themoviedb.org/3/movie/";
     static final String URL_PATH = "https://api.themoviedb.org/3/discover/movie";
     static final String KEY = "aeb332c2ca04fd8390da793f7bd43fd6";
 
@@ -28,7 +28,7 @@ public class ConnectionPathUtils {
     static final String SORT_BY  = "sort_by";
 
     static final String CERTIFICATION_COUNTRY  = "certification_country";
-    static final String CERTIFICATION  = "certification";
+    static final String LANGUAGE  = "language";
 
     final static String PARAM_RELEASE_YEAR = "primary_release_year";
     final static String DUMMY_KEY = "api_key";
@@ -36,7 +36,7 @@ public class ConnectionPathUtils {
     /* The number of release year we want our API to return */
     private static final int year = 2018;
 
-    private static final String country = "US";
+    private static final String country = "en_US";
     private static final String rate = "R";
 
     /**
@@ -104,11 +104,10 @@ public class ConnectionPathUtils {
     public static URL buildHighestRatedUrl(String[] highestRated) {
         Log.v(TAG, "buildHighestRatedUrl() Inside method: " + highestRated[0]);
 
-        Uri builtUri = Uri.parse(URL_PATH).buildUpon()
-                .appendQueryParameter(CERTIFICATION_COUNTRY, country)
-                .appendQueryParameter(CERTIFICATION, rate)
-                .appendQueryParameter(SORT_BY, highestRated[0])
+        Uri builtUri = Uri.parse(URL_TOP_RATED).buildUpon()
+                .appendEncodedPath(highestRated[0])
                 .appendQueryParameter(DUMMY_KEY, KEY)
+                .appendQueryParameter(LANGUAGE, country)
                 .build();
 
         URL url = null;
