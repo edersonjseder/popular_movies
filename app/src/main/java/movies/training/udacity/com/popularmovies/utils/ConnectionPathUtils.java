@@ -22,7 +22,7 @@ public class ConnectionPathUtils {
 
     static final String URL_TOP_RATED = "https://api.themoviedb.org/3/movie/";
     static final String URL_PATH = "https://api.themoviedb.org/3/discover/movie";
-    static final String KEY = "aeb332c2ca04fd8390da793f7bd43fd6";
+    static final String KEY = "";
 
     static final String IMG_URL  = "http://image.tmdb.org/t/p/w500/";
     static final String SORT_BY  = "sort_by";
