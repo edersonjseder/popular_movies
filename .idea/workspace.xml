@@ -11,76 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbb1d4bb-740c-4290-b834-85dd4226f72c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_6_2_jar.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/adapter/MovieReviewsAdapter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/adapter/MovieTrailerAdapter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/dao/MovieDao.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/database/AppMovieDatabase.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/executors/AppExecutors.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/listener/OnMovieTrailerSelectedListener.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/model/MovieListReviews.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/model/MovieListTrailer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/model/MovieReviewInf.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/typeconverter/ListConverter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/utils/FetchMoviesTaskLoader.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/viewholder/MovieReviewsViewHolder.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/viewmodel/MoviesViewModel.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/star_checked.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/star_unchecked.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/youtube_icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/movie_reviews_list_item.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/movie_trailer_list_item.xml" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/jarAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/jarAnalysis.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_common_1_1_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_0_jar.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_27_1_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_27_1_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_27_1_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_27_1_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_27_1_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_27_1_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_27_1_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_27_1_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/detail/MovieDetailActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/detail/MovieDetailActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/main/MainMoviesActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/main/MainMoviesActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/model/Movie.java" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/model/Movie.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/model/MoviesInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/model/MoviesInfo.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/utils/AlertDialogManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/utils/AlertDialogManager.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/utils/ConnectionPathUtils.java" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/utils/ConnectionPathUtils.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/utils/FetchMoviesTask.java" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/utils/FetchMoviesTask.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/utils/ParseJSONToJava.java" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/utils/ParseJSONToJava.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/viewholder/MovieViewHolder.java" afterPath="$PROJECT_DIR$/app/src/main/java/movies/training/udacity/com/popularmovies/viewholder/MovieViewHolder.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_movie_detail.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_movie_detail.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/movies_menu.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/movies_menu.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/popular_movies.iml" afterPath="$PROJECT_DIR$/popular_movies.iml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
