@@ -92,7 +92,7 @@ public class FetchMoviesTask extends AsyncTask<String, Void, MoviesInfo> {
             String jsonMovieResponse = ConnectionPathUtils.doQuery(moviesRequestUrl);
 
             //Execute method to get the JSON Object and convert it to Java Object
-            moviesInfo = (MoviesInfo) parseJSONToJava.convertToJava(jsonMovieResponse);
+            moviesInfo = (MoviesInfo) parseJSONToJava.convertJsonToMoviesInfoJavaClass(jsonMovieResponse);
 
             Log.i(TAG, "doInBackground() inside method - Pages: " + moviesInfo.getPage());
 

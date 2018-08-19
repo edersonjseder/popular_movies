@@ -12,6 +12,7 @@ import movies.training.udacity.com.popularmovies.R;
 
 public class AlertDialogManager {
 
+    @SuppressWarnings("deprecated")
     public void showAlertDialog(Context context, String title, String message, Boolean status){
 
         AlertDialog alertDialog = new AlertDialog.Builder(context).create();

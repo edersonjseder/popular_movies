@@ -28,4 +28,8 @@
         android:id="@+id/action_top_rated"
         android:title="@string/label_movie_menu_top_rated"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_favorite_movies"
+        android:title="@string/label_movie_menu_favorite_movies"
+        app:showAsAction="never" />
 </menu>

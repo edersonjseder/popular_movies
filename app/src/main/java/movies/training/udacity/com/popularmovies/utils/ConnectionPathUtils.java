@@ -5,12 +5,10 @@ import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Scanner;
 
 import movies.training.udacity.com.popularmovies.BuildConfig;
 
@@ -24,13 +22,14 @@ public class ConnectionPathUtils {
 
     private static final String KEY = BuildConfig.API_KEY;
 
-    static final String URL_TOP_RATED = "https://api.themoviedb.org/3/movie/";
+    static final String URL_BASE = "https://api.themoviedb.org/3/movie/";
     static final String URL_PATH = "https://api.themoviedb.org/3/discover/movie";
 
     static final String IMG_URL  = "http://image.tmdb.org/t/p/w500/";
     static final String SORT_BY  = "sort_by";
 
-    static final String CERTIFICATION_COUNTRY  = "certification_country";
+    static final String VIDEOS  = "videos";
+    static final String REVIEWS  = "reviews";
     static final String LANGUAGE  = "language";
 
     final static String PARAM_RELEASE_YEAR = "primary_release_year";
@@ -99,6 +98,35 @@ public class ConnectionPathUtils {
     }
 
     /**
+     * This method builds the URL for the most popular movies
+     *
+     * @param popular
+     * @return
+     */
+    public static URL buildMostPopularUrl(String popular) {
+        Log.v(TAG, "buildMostPopularUrl() Inside method: " + popular);
+
+        Uri builtUri = Uri.parse(URL_PATH).buildUpon()
+                .appendQueryParameter(SORT_BY, popular)
+                .appendQueryParameter(DUMMY_KEY, KEY)
+                .build();
+
+        URL url = null;
+
+        try {
+
+            url = new URL(builtUri.toString());
+
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+
+        Log.v(TAG, "Built URI " + url);
+
+        return url;
+    }
+
+    /**
      * This method builds the URL for the top rated movies
      *
      * @param highestRated
@@ -107,10 +135,100 @@ public class ConnectionPathUtils {
     public static URL buildHighestRatedUrl(String[] highestRated) {
         Log.v(TAG, "buildHighestRatedUrl() Inside method: " + highestRated[0]);
 
-        Uri builtUri = Uri.parse(URL_TOP_RATED).buildUpon()
+        Uri builtUri = Uri.parse(URL_BASE).buildUpon()
                 .appendEncodedPath(highestRated[0])
                 .appendQueryParameter(DUMMY_KEY, KEY)
                 .appendQueryParameter(LANGUAGE, country)
+                .build();
+
+        URL url = null;
+
+        try {
+
+            url = new URL(builtUri.toString());
+
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+
+        Log.v(TAG, "Built URI " + url);
+
+        return url;
+    }
+
+    /**
+     * This method builds the URL for the top rated movies
+     *
+     * @param highestRated
+     * @return
+     */
+    public static URL buildHighestRatedUrl(String highestRated) {
+        Log.v(TAG, "buildHighestRatedUrl() Inside method: " + highestRated);
+
+        Uri builtUri = Uri.parse(URL_BASE).buildUpon()
+                .appendEncodedPath(highestRated)
+                .appendQueryParameter(DUMMY_KEY, KEY)
+                .appendQueryParameter(LANGUAGE, country)
+                .build();
+
+        URL url = null;
+
+        try {
+
+            url = new URL(builtUri.toString());
+
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+
+        Log.v(TAG, "Built URI " + url);
+
+        return url;
+    }
+
+    /**
+     * This method builds the URL for the videos
+     *
+     * @param movieId
+     * @return
+     */
+    public static URL buildUrlVideos(String movieId) {
+        Log.v(TAG, "buildUrlVideos() Inside method: " + movieId);
+
+        Uri builtUri = Uri.parse(URL_BASE).buildUpon()
+                .appendEncodedPath(movieId)
+                .appendEncodedPath(VIDEOS)
+                .appendQueryParameter(DUMMY_KEY, KEY)
+                .build();
+
+        URL url = null;
+
+        try {
+
+            url = new URL(builtUri.toString());
+
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+
+        Log.v(TAG, "Built URI " + url);
+
+        return url;
+    }
+
+    /**
+     * This method builds the URL for the reviews
+     *
+     * @param movieId
+     * @return
+     */
+    public static URL buildUrlReviews(String movieId) {
+        Log.v(TAG, "buildUrlReviews() Inside method: " + movieId);
+
+        Uri builtUri = Uri.parse(URL_BASE).buildUpon()
+                .appendEncodedPath(movieId)
+                .appendEncodedPath(REVIEWS)
+                .appendQueryParameter(DUMMY_KEY, KEY)
                 .build();
 
         URL url = null;

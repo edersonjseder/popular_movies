@@ -1,5 +1,6 @@
 package movies.training.udacity.com.popularmovies.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.ArrayList;
@@ -18,6 +19,7 @@ public class MoviesInfo {
 
     @JsonProperty("results")
     private List<Movie> movieList = new ArrayList<>();
+
 
     public Integer getPage() {
         return page;
@@ -50,4 +52,5 @@ public class MoviesInfo {
     public void setMovieList(List<Movie> movieList) {
         this.movieList = movieList;
     }
+
 }
